@@ -4,6 +4,8 @@
     <div class="wrapper">
     @include('layouts.left')
     <!-- 右侧内容框架，更改从这里开始 -->
+     <div class="page-content">
+          <div class="content">
             <!-- 右侧内容框架，更改从这里开始 -->
             <form class="layui-form xbs" action="" >
                 <div class="layui-form-pane" style="text-align: center;">
@@ -75,26 +77,11 @@
                 </tbody>
             </table>
             <!-- 右侧内容框架，更改从这里结束 -->
-        </div>
-    <!-- 背景切换开始 -->
-    <div class="bg-changer">
-        <div class="swiper-container changer-list">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img class="item" src="./images/a.jpg" alt=""></div>
-                <div class="swiper-slide"><img class="item" src="./images/b.jpg" alt=""></div>
-                <div class="swiper-slide"><img class="item" src="./images/c.jpg" alt=""></div>
-                <div class="swiper-slide"><img class="item" src="./images/d.jpg" alt=""></div>
-                <div class="swiper-slide"><img class="item" src="./images/e.jpg" alt=""></div>
-                <div class="swiper-slide"><img class="item" src="./images/f.jpg" alt=""></div>
-                <div class="swiper-slide"><img class="item" src="./images/g.jpg" alt=""></div>
-                <div class="swiper-slide"><img class="item" src="./images/h.jpg" alt=""></div>
-                <div class="swiper-slide"><img class="item" src="./images/i.jpg" alt=""></div>
-                <div class="swiper-slide"><img class="item" src="./images/j.jpg" alt=""></div>
-                <div class="swiper-slide"><span class="reset">初始化</span></div>
             </div>
         </div>
-        <div class="bg-out"></div>
-        <div id="changer-set"><i class="iconfont">&#xe696;</i></div>
-    </div>
+        <!-- 右侧主体结束 -->
+        </div>
+    <!-- 背景切换开始 -->
+   
 <!-- 底部结束 -->
 @endsection
