@@ -41,6 +41,26 @@
                     </li>
                 </ul>
             </li>
+            <li class="list">
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe70b;</i>
+                        课程管理
+                        <i class="iconfont nav_right">&#xe697;</i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/course_list">
+                                <i class="iconfont">&#xe6a7;</i>课程列表
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/course_add">
+                                <i class="iconfont">&#xe6a7;</i>课程添加
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
                 <li class="list">
                     <a href="javascript:;">
                         <i class="iconfont">&#xe70b;</i>

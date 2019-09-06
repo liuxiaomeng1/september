@@ -18,17 +18,33 @@ class CourseController extends Controller
         $way = $_SERVER['SERVER_NAME'];
         $head = $_SERVER['REQUEST_SCHEME'];
         $pageSize=config('app.pageSize');
-        $res = Course::join("teacher","course.t_id","=","teacher.t_id")->paginate($pageSize);
-        $count = Course::count();
+        $res = Course::join("teacher","course.t_id","=","teacher.t_id")->orderBy('c_id','desc')->paginate($pageSize);
+        $count = Course::count();//
         //dd($count);
         return view('course.list',compact('res','count','way','head'));
     }
 
+    //无限极分类
+    function getCateInfo($cateInfo,$pid=0,$level=0){
+        static $arr=[];
+        foreach ($cateInfo as $k=>$v){
+            if($v['t_show']==$pid){
+                $v['level']=$level;
+                $arr[]=$v;
+                $this->getCateInfo($cateInfo,$v['t_id'],$v['level']+1);
+            }
+        }
+        return $arr;
+    }
+
     public function course_add()
     {
-        $first = Teacher::get();
+        $cate=new Teacher();
+        $data =$cate->get();
+        $dd=$this->getCateInfo($data);
+        //dd($dd);
         //dd($t_name);
-        return view('course.add',compact('first'));
+        return view('course.add',compact('dd'));
     }
 
     public function course_add_do(Request $request)
@@ -104,5 +120,6 @@ class CourseController extends Controller
             echo json_encode(['ret'=>4,'msg'=>'删除失败']);
         }
     }
+
 
 }

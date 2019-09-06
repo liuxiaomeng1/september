@@ -130,7 +130,6 @@
             {{$res->links()}}
             <!-- 右侧内容框架，更改从这里结束 -->
           </div>
-
         </div>
         <!-- 右侧主体结束 -->
 </div>
@@ -239,7 +238,9 @@
           s.parentNode.insertBefore(hm, s);
         })();
         </script>
-<script src="jquery-3.3.1.js"></script>
+<link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
 <script>
     $("#allbox").click(function(){
             var status=$(this).prop('checked');
