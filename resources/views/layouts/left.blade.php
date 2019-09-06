@@ -8,6 +8,39 @@
                         <i class="iconfont nav_right">&#xe697;</i>
                     </a>
                 </li>
+				<li class="list">
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe70b;</i>
+                    俱乐部管理
+                    <i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="{{url('club/add')}}">
+                            <i class="iconfont">&#xe6a7;</i>
+                            俱乐部添加
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('club/index')}}">
+                            <i class="iconfont">&#xe6a7;</i>
+                            俱乐部列表
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('a/add')}}">
+                            <i class="iconfont">&#xe6a7;</i>
+                            活动添加
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('a/index')}}">
+                            <i class="iconfont">&#xe6a7;</i>
+                            活动列表
+                        </a>
+                    </li>
+                </ul>
+            </li>
                 <li class="list">
                     <a href="javascript:;">
                         <i class="iconfont">&#xe70b;</i>
