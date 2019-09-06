@@ -52,5 +52,10 @@ Route::prefix('/login')->group(function(){
    route::any('forget','school\\LoginController@forget');
 });
 
+Route::any('/course_list','CourseController@course_list');
+Route::any('/course_add','CourseController@course_add');
+Route::any('/course_add_do','CourseController@course_add_do');
+Route::any('/course_del','CourseController@course_del');
+Route::any('/Batchdelete','CourseController@Batchdelete');
 
 //Route::any('/teachar','TeacherController@add');
