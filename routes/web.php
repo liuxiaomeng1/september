@@ -24,4 +24,33 @@ Route::get('/', function () {
  });
 
 
+
+Route::prefix('/admin')->middleware('login')->group(function(){
+   route::any('index','school\\AdminController@index');
+});
+
+//俱乐部管理
+Route::prefix('/club')->group(function(){
+   route::any('add','school\\ClubController@add');
+   route::any('add_do','school\\ClubController@add_do');
+   route::any('index','school\\ClubController@index');
+   route::any('del','school\\ClubController@del');
+});
+
+//俱乐部活动管理
+Route::prefix('/a')->group(function(){
+   route::any('add','school\\ActivityController@add');
+   route::any('add_do','school\\ActivityController@add_do');
+   route::any('index','school\\ActivityController@index');
+});
+
+//后台登录页面
+Route::prefix('/login')->group(function(){
+   route::any('login','school\\LoginController@login');
+   route::any('dologin','school\\LoginController@dologin');
+   route::any('forgetpwd','school\\LoginController@forgetpwd');
+   route::any('forget','school\\LoginController@forget');
+});
+
+
 //Route::any('/teachar','TeacherController@add');
