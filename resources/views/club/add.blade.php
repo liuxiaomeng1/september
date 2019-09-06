@@ -3,6 +3,9 @@
 
     <div class="wrapper">
     @include('layouts.left')
+    <!-- 右侧主体开始 -->
+        <div class="page-content">
+          <div class="content">
             <!-- 右侧内容框架，更改从这里开始 -->
             <form class="layui-form" enctype="multipart/form-data" action="/club/add_do" method="post">
                 <div class="layui-form-item">
@@ -49,5 +52,8 @@
                 </div>
             </form>
             <!-- 右侧内容框架，更改从这里结束 -->
+             </div>
+        </div>
+        <!-- 右侧主体结束 -->
     </div>
 @endsection
