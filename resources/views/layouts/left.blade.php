@@ -42,7 +42,7 @@
                 </ul>
             </li>
             <li class="list">
-<<<<<<< HEAD
+
                     <a href="javascript:;">
                         <i class="iconfont">&#xe70b;</i>
                         课程管理
@@ -63,8 +63,7 @@
 
                 </li>
                 <li class="list">
-=======
->>>>>>> 203629b31d2a29683d07a55449869531204ba7da
+
                     <a href="javascript:;">
                         <i class="iconfont">&#xe70b;</i>
                         品牌管理
